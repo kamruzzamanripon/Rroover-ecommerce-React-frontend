@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="23CEYVMlj9aL1txiYASxulVF14e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/context/homepage" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\context\homepage" />
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\pages" />
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\components\homeComponents" />
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\components\owlComponents" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="" />
+      <created>1641229715409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641229715409</updated>
+      <workItem from="1641229717733" duration="85000" />
+      <workItem from="1641315527833" duration="12678000" />
+      <workItem from="1641373086987" duration="27848000" />
+      <workItem from="1641474258853" duration="18945000" />
+      <workItem from="1641547536500" duration="17464000" />
+      <workItem from="1641638297964" duration="8957000" />
+      <workItem from="1641741457837" duration="11827000" />
+      <workItem from="1641892068795" duration="20030000" />
+      <workItem from="1641978684536" duration="26347000" />
+      <workItem from="1642023645907" duration="124000" />
+      <workItem from="1642061765603" duration="21459000" />
+      <workItem from="1642150715882" duration="1589000" />
+      <workItem from="1642168417152" duration="9225000" />
+      <workItem from="1642258635795" duration="12586000" />
+      <workItem from="1642342360064" duration="12794000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="182" key="#ESLint" timestamp="1641324451648">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="182" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641324451648" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641324602011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641324602011" />
+    <state x="734" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641317626359">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641317626359" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1641648933389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641648933389" />
+    <state x="926" y="159" key="SettingsEditor" timestamp="1641480277703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="926" y="159" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641480277703" />
+    <state x="486" y="113" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1641581758448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="486" y="113" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641581758448" />
+    <state x="629" y="154" width="662" height="732" key="find.popup" timestamp="1641411392514">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="154" width="662" height="732" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641411392514" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1641499259895">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641499259895" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641315657763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641315657763" />
+  </component>
+</project>
