@@ -2,7 +2,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import React, { Fragment, useEffect, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
-import ApiUrl from '../../api/ApiUrl'
+import useMainSliderContext from '../../context/homepage/sectionFetchContext/MainSliderContextHook'
 
 
 function MainSlider() {
@@ -23,26 +23,8 @@ function MainSlider() {
     ],
   };
 
-  const [bannerData, setBannerData]  = useState({});
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
-  const api = new ApiUrl();
+  const {bannerData, loading, errors} = useMainSliderContext();
 
-  useEffect(async ()=>{
-      try{
-        setLoading(true);
-        setErrors({})
-        const {data} = await api.getSingleSlug('main-banner');
-
-        const bData = data.data
-         //console.log(dData)
-         setBannerData({ bData})
-         setLoading(false);
-      }catch (e) {
-        console.log(e)
-        setErrors({e})
-      }
-  },[2]);
   //console.log(bannerData)
 
   const owlData =  bannerData.bData ? (bannerData.bData.map((banner, index)=>{

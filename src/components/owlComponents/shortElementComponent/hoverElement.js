@@ -1,41 +1,25 @@
-import React,{useState, useEffect} from 'react';
-import ApiUrl from '../../../api/ApiUrl'
+import React from 'react';
+import {Link} from "react-router-dom";
+import useAddWishListEventHook from "../../../utilityHook/addWishListEventHook";
 
 const HoverElement = ({productId}) => {
-    const [productInfo, setProductInfo] = useState();
-    const [loading, setLoading] = useState(false);
-    const [errors, setErrors] = useState();
+   const {addWishListEvent} = useAddWishListEventHook(productId)
 
-    const addWishList = async (e)=>{
-        const api = new ApiUrl();
-        e.preventDefault();
-        setProductInfo({
-            'product_id' : productId
-        });
-        try{
-            const data = await api.postSingleSlug("add-wishlist", productInfo)
-            console.log("WishList Data", data)
-            setProductInfo();
-        }catch (e) {
-            console.log(e);
-            setErrors(e)
-        }
-    };
+    const addWishList = (e)=>{
+        e.preventDefault()
+        addWishListEvent()
+    }
 
-    useEffect(()=>{
-
-    },[])
-
-    console.log(productInfo)
+    //console.log("WishList Product userInfo", productInfo)
 
 
     return (
         <div className="item-action-behaviors">
-            <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look
-            </a>
-            <a className="item-mail" href="#">Mail</a>
-            <a className="item-addwishlist" onClick={(e)=> addWishList(e)} >Add to Wishlist</a>
-            <a className="item-addCart" href="#">Add to Cart</a>
+
+            {/*<a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick Look*/}
+            {/*</a>*/}
+            <a className="item-addwishlist" onClick={(e) => addWishList(e)}>Add to Wishlist</a>
+            <Link className="item-addCart" to={`/singleProduct/${productId}`}> Add to Cart</Link>
         </div>
     );
 };

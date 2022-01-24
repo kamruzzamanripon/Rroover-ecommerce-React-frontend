@@ -1,8 +1,15 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
-const BreadCumbCategorySubCategory = ({category_info, subcategory_info}) => {
+const BreadCumbCategorySubCategory = ({category_info, subcategory_info, homeLink}) => {
     return (
         <ul className="bread-crumb">
+            {homeLink &&
+            <li className="has-separator">
+                <Link to="/">Home</Link>
+            </li>
+            }
+
             <li className="has-separator">
                 <a href="shop-v1-root-category.html">{category_info ? category_info.name : ""}</a>
             </li>

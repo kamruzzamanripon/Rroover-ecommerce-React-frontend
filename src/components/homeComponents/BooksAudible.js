@@ -3,77 +3,11 @@ import {Link} from 'react-router-dom'
 import CollapseTabItem from "../collapseTabComponents/CollapseTabItem";
 import CollapseTigerItem from "../collapseTabComponents/CollapseTigerItem";
 import ApiUrl from "../../api/ApiUrl";
+import useBooksAudibleContextHook from "../../context/homepage/sectionFetchContext/BooksAudibleContextHook";
 
 function BooksAudible() {
-  const api = new ApiUrl();
-  const [menProduts, setmenProducts] = useState();
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState();
 
-  const latestProduct = async () => {
-    try {
-      setmenProducts();
-      setLoading(true);
-      setErrors({});
-      const {data} = await api.getTwoSlug('beauty-health', 'latest_product');
-
-      const bData = data.data;
-      //console.log(dData)
-      setmenProducts(bData);
-      setLoading(false);
-    } catch (e) {
-      console.log(e);
-      setErrors(e)
-    }
-  };
-  const bestSellingProduts = async () => {
-    try {
-      setmenProducts();
-      setLoading(true);
-      setErrors({});
-      const {data} = await api.getTwoSlug('beauty-health', 'best_selling');
-
-      const bData = data.data;
-      //console.log(dData)
-      setmenProducts(bData);
-      setLoading(false);
-    } catch (e) {
-      console.log(e);
-      setErrors({e})
-    }
-  };
-  const topRatingProduts = async () => {
-    try {
-      setmenProducts();
-      setLoading(true);
-      setErrors({});
-      const {data} = await api.getTwoSlug('beauty-health', 'top_rating');
-
-      const bData = data.data;
-      //console.log(dData)
-      setmenProducts(bData);
-      setLoading(false);
-    } catch (e) {
-      console.log(e);
-      setErrors({e})
-    }
-  };
-  const featureProduts = async () => {
-    try {
-      setmenProducts();
-      setLoading(true);
-      setErrors({});
-      const {data} = await api.getTwoSlug('beauty-health', 'featured');
-
-      const bData = data.data;
-      //console.log(dData)
-      setmenProducts(bData);
-      setLoading(false);
-    } catch (e) {
-      console.log(e);
-      setErrors({e})
-    }
-  };
+  const {bestSellingProduts, featureProduts, latestProduct, menProduts, topRatingProduts, errors, loading} = useBooksAudibleContextHook()
 
   useEffect(() => {
     latestProduct()

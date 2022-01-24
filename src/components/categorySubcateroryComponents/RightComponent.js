@@ -1,13 +1,21 @@
-import React, {Fragment, useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {Fragment, useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 
-import {useCategoryProducts} from '../../context/SingleCategoryProductsContext'
-import {useSubCategoryProduct} from '../../context/SubCategoryProductsContext'
-import {useSingleBrandProducts} from '../../context/SingleBrandProductsContext'
-import {useNewArrivalProducts} from '../../context/homepage/NewArrivalProductContext'
-import {useExclusiveDealProducts} from '../../context/homepage/ExclusiveDealProductContext'
-import {useFlashDealContextProducts} from '../../context/homepage/FlashDealProductContext'
-import {useSuperSaleProducts} from '../../context/homepage/SuperSaleProductContext'
+import {useCategoryProducts} from '../../context/SingleCategoryProductsContext';
+import {useSubCategoryProduct} from '../../context/SubCategoryProductsContext';
+import {useSingleBrandProducts} from '../../context/SingleBrandProductsContext';
+import {useNewArrivalProducts} from '../../context/homepage/NewArrivalProductContext';
+import {useExclusiveDealProducts} from '../../context/homepage/ExclusiveDealProductContext';
+import {useFlashDealContextProducts} from '../../context/homepage/FlashDealProductContext';
+import {useSuperSaleProducts} from '../../context/homepage/SuperSaleProductContext';
+import HoverElement from "../owlComponents/shortElementComponent/hoverElement";
+import ImageElement from "../owlComponents/shortElementComponent/imageElement";
+import ProductInfoElement from "../owlComponents/shortElementComponent/productInfoElement";
+import BreadCumbCategorySubCategory from "../owlComponents/shortElementComponent/breadCumbCategorySubCategory";
+import ProductPriceInfoElement from "../owlComponents/shortElementComponent/productPriceInfoElement";
+import HotSymbolElement from "../owlComponents/shortElementComponent/hotSymbolElement";
+import SaleSymbolElement from "../owlComponents/shortElementComponent/saleSymbolElement";
+import NoProductFoundElement from "../owlComponents/shortElementComponent/noProductFoundElement";
 
 function RightComponent(props) {
     const [displayList, setDisplayList] = useState(true);
@@ -48,8 +56,8 @@ function RightComponent(props) {
     //console.log('products products', products);
 
     const setDisplayStyle = () => {
-        setDisplayList(!displayList)
-        setDisplayGrid(!displayGrid)
+        setDisplayList(!displayList);
+        setDisplayGrid(!displayGrid);
     };
 
     useEffect(() => {
@@ -68,19 +76,19 @@ function RightComponent(props) {
             setProducts(brandProducts)
         }
 
-    }, [])
+    }, []);
 
-    useEffect(()=>{
-        if(newArrivalProducts.length>0 ){
+    useEffect(() => {
+        if (newArrivalProducts.length > 0) {
             setProducts(newArrivalProducts);
-        }else if(exclusiveDealProduct.length>0){
+        } else if (exclusiveDealProduct.length > 0) {
             setProducts(exclusiveDealProduct);
-        }else if(flashDealProducts.length>0){
+        } else if (flashDealProducts.length > 0) {
             setProducts(flashDealProducts);
-        }else if(superSalesProducts.length>0){
+        } else if (superSalesProducts.length > 0) {
             setProducts(superSalesProducts);
         }
-    })
+    });
 
     return (
         <Fragment>
@@ -139,75 +147,46 @@ function RightComponent(props) {
                 {/* Row-of-Product-Container */}
                 <div
                     className={displayList === true ? 'row product-container list-style' : 'row product-container grid-style'}>
+
                     {products && products.length > 0 ? products.map((product, index) => {
                         const image = product ? JSON.parse(product.image) : ''
 
-                        return <div className={props.col === "12" ? 'product-item col-lg-2 col-md-6 col-sm-6' : 'product-item col-lg-4 col-md-6 col-sm-6'}>
+                        return <div
+                            className={props.col === "12" ? 'product-item col-lg-2 col-md-6 col-sm-6' : 'product-item col-lg-4 col-md-6 col-sm-6'}>
                             <div className="item" key={index}>
                                 <Link to={`/singleProduct/${product.id}`}>
                                     <div className="image-container">
-                                        <a className="item-img-wrapper-link" href="#">
-                                            <img className="img-fluid" src={image[0]} alt="Product"/>
-                                        </a>
-                                        <div className="item-action-behaviors">
-                                            <a className="item-quick-look" data-toggle="modal" href="#quick-view">Quick
-                                                Look
-                                            </a>
-                                            <a className="item-mail" href="#">Mail</a>
-                                            <a className="item-addwishlist" href="#">Add to Wishlist</a>
-                                            <a className="item-addCart" href="#">Add to Cart</a>
-                                        </div>
+
+                                        <ImageElement image={image[0]}/>
+                                        <HoverElement productId={product.id}/>
+
                                     </div>
                                     <div className="item-content">
                                         <div className="what-product-is">
+
                                             {product.category_info && product.subcategory_info && (
-                                                <ul className="bread-crumb">
-                                                    <li className="has-separator">
-                                                        <a href="shop-v1-root-category.html">{product.category_info ? product.category_info.name : ""}</a>
-                                                    </li>
-                                                    <li className="has-separator">
-                                                        <a href="shop-v2-sub-category.html">{product.subcategory_info ? product.subcategory_info.name : ""}</a>
-                                                    </li>
+                                                <BreadCumbCategorySubCategory
+                                                    category_info={product.category_info}
+                                                    subcategory_info={product.subcategory_info}
+                                                />
+                                            )};
 
-                                                </ul>
-                                            )}
+                                            <ProductInfoElement product={product}/>
 
-
-                                            <h6 className="item-title">
-                                                <a href="single-product.html">{product.name}</a>
-                                            </h6>
-                                            <div className="item-stars">
-                                                <div className="star" title="0 out of 5 - based on 0 Reviews">
-                                                    <span style={{width: 0}}/>
-                                                </div>
-                                                <span>(0)</span>
-                                            </div>
                                         </div>
-                                        <div className="price-template">
-                                            <div className="item-new-price">
-                                                ${product.actual_price}
-                                            </div>
-                                            <div className="item-old-price">
-                                                ${product.actual_price}
-                                            </div>
-                                        </div>
+
+
+                                        <ProductPriceInfoElement product={product}/>
                                     </div>
 
-                                    {product.hot ? (
-                                        <div className="tag new">
-                                            <span>NEW</span>
-                                        </div>
-                                    ) : ''}
-
-                                    {product.sale ? (
-                                        <div className="tag sale">
-                                            <span>SALE</span>
-                                        </div>
-                                    ) : ''}
+                                    <HotSymbolElement hot={product.hot}/>
+                                    <SaleSymbolElement sale={product.sale}/>
                                 </Link>
                             </div>
                         </div>
-                    }) : "No Product is available"}
+                    }) : (
+                        <NoProductFoundElement/>
+                    )}
 
 
                 </div>

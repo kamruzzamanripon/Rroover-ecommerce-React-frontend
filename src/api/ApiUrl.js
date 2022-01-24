@@ -1,4 +1,5 @@
 import axios from "axios";
+import Cookie from 'js-cookie';
 
 class ApiUrl {
 
@@ -8,13 +9,13 @@ class ApiUrl {
     }
 
 
-    getTwoSlug = async (slugOne, slugTwo) => {
-        const res = await axios.get(`${process.env.REACT_APP_DATABASE_URL}` + "/" + slugOne + "/" + slugTwo);
+    getTwoSlug = async (slug, paramOne) => {
+        const res = await axios.get(`${process.env.REACT_APP_DATABASE_URL}` + "/" + slug + "/" + paramOne);
         return res;
     }
 
-    getThreeSlug = async (slugOne, slugTwo, slugThree) => {
-        const res = await axios.get(`${process.env.REACT_APP_DATABASE_URL}` + "/" + slugOne + "/" + slugTwo + "/" + slugThree);
+    getThreeSlug = async (slug, paramOne, paramTwo) => {
+        const res = await axios.get(`${process.env.REACT_APP_DATABASE_URL}` + "/" + slug + "/" + paramOne + "/" + paramTwo);
         return res;
     }
 
@@ -50,8 +51,33 @@ class ApiUrl {
 
     postSingleSlug = async (slug, data)=>{
         const res = await axios.post(`${process.env.REACT_APP_DATABASE_URL}` + "/" + slug, data);
+
+        //console.log("Api Url", res.data.token_info.token)
         return res;
     }
+
+
+    authGetSlug = async (slug)=>{
+        const token = Cookie?.get('passport_frontend');
+        const res = await  axios.get(`${process.env.REACT_APP_DATABASE_URL}`  + "/" + slug, { headers: {"Authorization" : `Bearer ${token}`} });
+        //console.log("Api errors data", res.data )
+        return res;
+    }
+
+    authPostSlug = async (slug, data)=>{
+        const token = Cookie?.get('passport_frontend');
+        const res = await  axios.post(`${process.env.REACT_APP_DATABASE_URL}`  + "/" + slug, data,{ headers: {"Authorization" : `Bearer ${token}`} });
+        //console.log("Api errors data", res.data )
+        return res;
+    }
+
+    authDeleteSlug = async (slug, id)=>{
+        const token = Cookie?.get('passport_frontend');
+        const res = await  axios.delete(`${process.env.REACT_APP_DATABASE_URL}`  + "/" + slug + "/" + id,{ headers: {"Authorization" : `Bearer ${token}`} });
+        //console.log("Api errors data", res.data )
+        return res;
+    }
+
 }
 
 export default ApiUrl;

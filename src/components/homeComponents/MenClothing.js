@@ -1,78 +1,11 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import CollapseTabItem from "../collapseTabComponents/CollapseTabItem";
 import CollapseTigerItem from "../collapseTabComponents/CollapseTigerItem";
-import ApiUrl from "../../api/ApiUrl";
+import useMenClothingContext from '../../context/homepage/sectionFetchContext/MenClothingContextHook'
 
 function MenClothing() {
-    const api = new ApiUrl();
-    const [menProduts, setmenProducts] = useState();
-    const [loading, setLoading] = useState(false);
-    const [errors, setErrors] = useState();
 
-    const latestProduct = async () => {
-        try {
-            setmenProducts();
-            setLoading(true);
-            setErrors();
-            const {data} = await api.getTwoSlug('mens-latest-product', 'latest_product');
-
-            const bData = data.data;
-            //console.log(dData)
-            setmenProducts(bData);
-            setLoading(false);
-        } catch (e) {
-            console.log(e);
-            setErrors(e)
-        }
-    };
-    const bestSellingProduts = async () => {
-        try {
-            setmenProducts();
-            setLoading(true);
-            setErrors({});
-            const {data} = await api.getTwoSlug('mens-latest-product', 'best_selling');
-
-            const bData = data.data;
-            //console.log(dData)
-            setmenProducts(bData);
-            setLoading(false);
-        } catch (e) {
-            console.log(e);
-            setErrors({e})
-        }
-    };
-    const topRatingProduts = async () => {
-        try {
-            setmenProducts();
-            setLoading(true);
-            setErrors({});
-            const {data} = await api.getTwoSlug('mens-latest-product', 'top_rating');
-
-            const bData = data.data;
-            //console.log(dData)
-            setmenProducts(bData);
-            setLoading(false);
-        } catch (e) {
-            console.log(e);
-            setErrors({e})
-        }
-    };
-    const featureProduts = async () => {
-        try {
-            setmenProducts();
-            setLoading(true);
-            setErrors({});
-            const {data} = await api.getTwoSlug('mens-latest-product', 'featured');
-
-            const bData = data.data;
-            //console.log(dData)
-            setmenProducts(bData);
-            setLoading(false);
-        } catch (e) {
-            console.log(e);
-            setErrors({e})
-        }
-    };
+    const {featureProduts, topRatingProduts, bestSellingProduts, latestProduct, errors, loading, menProduts} = useMenClothingContext()
 
     useEffect( () => {
         latestProduct()

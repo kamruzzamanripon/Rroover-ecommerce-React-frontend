@@ -1,26 +1,11 @@
 import React,{Fragment, useState, useEffect} from 'react';
 import OwlSmallFiveSlide from "../owlComponents/owlSmallFiveSlide";
 import ApiUrl from "../../api/ApiUrl";
+import useBrandSliderContextHook from "../../context/homepage/sectionFetchContext/BrandSliderContextHook";
 
 function BrandSlider() {
-    const api = new ApiUrl();
-    const [brandList, setBrandList] = useState();
-    const [loading, setLoading] = useState(false);
-    const [errors, setErrors] = useState();
 
-    useEffect(async ()=>{
-        try{
-            setLoading(true);
-            setErrors();
-            const {data:{data}} = await api.getSingleSlug("brand-list");
-            //console.log(data)
-            setBrandList(data);
-            setLoading(false);
-        }catch (e) {
-            console.log(e);
-            setErrors(e);
-        }
-    },[])
+    const {brandList, loading, errors} = useBrandSliderContextHook();
     //console.log(brandList)
       return (
         <Fragment>

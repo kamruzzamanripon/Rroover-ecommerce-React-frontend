@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="" />
+    <list default="true" id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/ApiUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/ApiUrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LostPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LostPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WishList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/categorySubcateroryComponents/RightComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/categorySubcateroryComponents/RightComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/MidHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/MidHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/TopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/TopHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/BannerImageViewMore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/BannerImageViewMore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/BannerLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/BannerLayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/BeautyHealths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/BeautyHealths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/BooksAudible.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/BooksAudible.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/BrandSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/BrandSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/MainSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/MainSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/MenClothing-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/MenClothing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/MenClothing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/MenClothingTimingSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/MenClothingTimingSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/MobilesTablets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/MobilesTablets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/ToysHobbiesRobots.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/ToysHobbiesRobots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/homeComponents/WomenClothing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homeComponents/WomenClothing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginRegisterComponents/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginRegisterComponents/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginRegisterComponents/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginRegisterComponents/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/owlComponents/owlCarouselComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/owlComponents/owlCarouselComponents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/owlComponents/shortElementComponent/breadCumbCategorySubCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/owlComponents/shortElementComponent/breadCumbCategorySubCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/owlComponents/shortElementComponent/hoverElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/owlComponents/shortElementComponent/hoverElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/ProductDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/ProductDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/SingleCategoryProductsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/SingleCategoryProductsContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/WhishListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/WhishListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route/AppRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/AppRoute.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -14,6 +50,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="23CEYVMlj9aL1txiYASxulVF14e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/context/homepage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/homeComponents" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -33,10 +72,13 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\components\common\headerComponents\MidHeader" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\context\homepage" />
-      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\pages" />
       <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\components\homeComponents" />
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\pages" />
+      <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\context\homepage" />
       <recent name="E:\xampp\htdocs\New_Resource\Ripon\Portfolio\Ecommerce\frontend_by_react\src\components\owlComponents" />
     </key>
   </component>
@@ -77,6 +119,16 @@
       <workItem from="1642168417152" duration="9225000" />
       <workItem from="1642258635795" duration="12586000" />
       <workItem from="1642342360064" duration="12794000" />
+      <workItem from="1642496266632" duration="28000" />
+      <workItem from="1642536356564" duration="4644000" />
+      <workItem from="1642584886520" duration="23159000" />
+      <workItem from="1642669568722" duration="2626000" />
+      <workItem from="1642685386708" duration="6772000" />
+      <workItem from="1642759285166" duration="11596000" />
+      <workItem from="1642785152269" duration="5425000" />
+      <workItem from="1642844158700" duration="20934000" />
+      <workItem from="1642930594853" duration="23867000" />
+      <workItem from="1643041299552" duration="20031000" />
     </task>
     <servers />
   </component>
@@ -108,17 +160,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="113" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641581758448" />
-    <state x="629" y="154" width="662" height="732" key="find.popup" timestamp="1641411392514">
+    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1642536554414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="629" y="154" width="662" height="732" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641411392514" />
+    <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1642536554414" />
+    <state x="629" y="154" width="662" height="732" key="find.popup" timestamp="1642536800207">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="154" width="662" height="732" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1642536800207" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1641499259895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641499259895" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641315657763">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1642538156067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641315657763" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1642538156067" />
   </component>
 </project>

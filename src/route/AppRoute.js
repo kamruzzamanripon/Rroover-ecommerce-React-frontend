@@ -25,6 +25,8 @@ import TermsAndConditionsPage from '../pages/TermsAndConditionsPage';
 import TrackOrderPage from '../pages/TrackOrderPage';
 import WhishListPage from '../pages/WhishListPage';
 import SingleBrandPage from "../pages/SingleBrandPage";
+import PrivateOutlet from "./PrivateOutlet";
+import ResetPasswordPage from "../pages/ResetPasswordPage";
 
 
 function AppRoute() {
@@ -36,12 +38,20 @@ function AppRoute() {
                 <Route exact  path="category/:categoryId" element={<CategoryPage />} />
                 <Route  path="/:catId/:subCatId" element={<SubCategoryPage />} />
                 <Route  path="/:categoryName/:subCategoryName/:subCategoryName" element={<SubCategoryUnderSubCategoryPage />} /> //not use
-                <Route  path="/cart" element={<CartPage />} />
+
+                <Route path="/authentication/*" element={<PrivateOutlet />}>
+                   <Route  path="wishlist" element={<WhishListPage />} />
+                   <Route  path="cart" element={<CartPage />} />
+                </Route>
+
+
                 <Route  path="/checkout" element={<CheckOutPage />} />
-                <Route  path="/wishlist" element={<WhishListPage />} />
+                {/*<Route  path="/wishlist" element={<WhishListPage />} />*/}
                 <Route  path="/search-result" element={<SearchResultPage />} />
+
                 <Route  path="/login" element={<LoginRegisterPage />} />
                 <Route  path="/lost-password" element={<LostPasswordPage />} />
+                <Route  path="/reset-password/*" element={<ResetPasswordPage />} />
 
                 <Route  path="/single-brand/:brandId" element={<SingleBrandPage />} />
                 <Route  path="/new-arrivals" element={<NewArrivalsPage />} />

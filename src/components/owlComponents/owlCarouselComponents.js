@@ -57,7 +57,7 @@ function OwlCarouselComponents({Products}) {
 
                                 <div className="image-container">
                                     <ImageElement image={image[0]}/>
-                                    <HoverElement productId={product.id}/>
+                                    <HoverElement productId={product.id} image={image[0]} />
                                 </div>
 
                                 <div className="item-content">

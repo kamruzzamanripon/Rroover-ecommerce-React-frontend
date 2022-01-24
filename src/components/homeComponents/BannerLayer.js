@@ -1,29 +1,11 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import ApiUrl from '../../api/ApiUrl';
+import useBannerLayerContext from '../../context/homepage/sectionFetchContext/BannerLayerContextHook'
 
 
 
 function BannerLayer() {
-    const api = new ApiUrl();
-    const [singleBanner, setSingleBanner] = useState();
-    const [loading, setLoading] = useState(false);
-    const [errors, setErrors] = useState();
-
-    useEffect( async ()=>{
-        try{
-            setLoading(true);
-            setErrors({})
-            const {data:{data}} = await api.getSingleSlug('single-banner');
-            const bannerData = data[0];
-            //console.log(data[0].sub_title)
-            setSingleBanner(bannerData);
-            setLoading(false);
-        }catch (e) {
-            console.log(e)
-            setErrors(e)
-        }
-    },[]);
-//console.log(singleBanner)
+   const {singleBanner, loading, errors} = useBannerLayerContext()
 //console.log("BannerLayer Component")
     return (
         <Fragment>

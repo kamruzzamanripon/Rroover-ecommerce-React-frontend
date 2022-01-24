@@ -15,7 +15,7 @@ const SingleCategoryProductsContextProvider = ({children, categoryId, sortOrder,
 
     useEffect(async () => {
         //console.log("showProduct context", showProduct)
-        console.log("categoryId context", categoryId)
+        //console.log("categoryId context", categoryId)
         try {
             setLoading(true);
             setErrors();

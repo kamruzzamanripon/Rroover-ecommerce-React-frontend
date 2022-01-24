@@ -1,32 +1,13 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import OwlCarouselComponents from "../owlComponents/owlCarouselComponents";
 import ApiUrl from "../../api/ApiUrl";
+import useMenClothingTimingSectionContext from '../../context/homepage/sectionFetchContext/MenClothingTimingSectionContextHook'
 import CollapseTabItem from "../collapseTabComponents/CollapseTabItem";
 
 function MenClothingTimingSection() {
 
-  const api = new ApiUrl();
-  const [menHotDealProduts, setMenHotDealProduts] = useState();
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState();
+    const {errors, loading, menHotDealProduts} = useMenClothingTimingSectionContext()
 
-    useEffect(async ()=>{
-      try {
-        setMenHotDealProduts();
-        setLoading(true);
-        setErrors();
-        const {data} = await api.getSingleSlug('mens-hotdeals');
-
-        const bData = data.data;
-        //console.log(bData)
-          setMenHotDealProduts(bData);
-        setLoading(false);
-      } catch (e) {
-        console.log(e);
-        setErrors(e)
-      }
-    },[1]);
- //console.log(menHotDealProduts)
     return (
         <Fragment>
 

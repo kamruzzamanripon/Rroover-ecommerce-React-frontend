@@ -3,15 +3,15 @@ import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
 import PageIntroductionWrapper from '../components/common/PageIntroductionWrapper'
 import WishList from '../components/WishList'
+import useWishListContextHook from '../context/wishListPage/WishListContextHook'
 
 function WhishListPage() {
-    
     useEffect(()=>{
         window.scroll(0,0)
     })
     return (
         <Fragment>
-            
+
             {/* Header */}
             <Header allCategoryMenu='false'/>
             {/* Header /- */}
@@ -25,7 +25,7 @@ function WhishListPage() {
             {/* Page Introduction Wrapper /- */}
 
            <WishList/>
-            
+
 
             {/* Footer */}
             <Footer/>

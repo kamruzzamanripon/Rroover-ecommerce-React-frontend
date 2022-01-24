@@ -1,6 +1,32 @@
-import React,{Fragment} from 'react'
+import React,{Fragment, useState,useEffect} from 'react'
+import useForgetPasswordContextHook from '../context/loginRegisterPage/ForgetPasswordContextHook.js'
 
 function LostPassword() {
+    const[email, setEmail] = useState('');
+    const[loader, setLoader] = useState(false);
+    const [message, setMessage] = useState('')
+    const {loading, errors, forgetpasswordData, forgetPasswordEvent} = useForgetPasswordContextHook();
+
+    const getRestLink = ()=>{
+
+        if(email === ''){
+            setMessage("Please type your email")
+        }
+
+        if( email ){
+            forgetPasswordEvent(email);
+            setEmail('');
+        }
+
+    }
+
+    useEffect(()=>{
+        if(!loading){
+            setEmail();
+        }
+    },[loader])
+
+    console.log("email", email)
     return (
         <Fragment>
             <div className="page-lost-password u-s-p-t-80">
@@ -14,10 +40,22 @@ function LostPassword() {
                         <label htmlFor="user-name-email">Username or Email
                             <span className="astk">*</span>
                         </label>
-                        <input type="text" id="user-name-email" className="text-field" placeholder="Username / Email" />
+                        <input
+                            type="text"
+                            id="user-name-email"
+                            className="text-field"
+                            placeholder="Username / Email"
+                            onChange={(e)=>setEmail(e.target.value)}
+                            value={email}
+                        />
+                            {message && message}
                         </div>
                         <div className="u-s-m-b-13">
-                        <button className="button button-outline-secondary">Get Reset Link</button>
+                        <button className="button button-outline-secondary" onClick={getRestLink}>Get Reset Link</button>
+                            <br/>
+
+                            {loading && "Mail Sending..." }
+
                         </div>
                     </div>
                     <div className="page-anchor">
