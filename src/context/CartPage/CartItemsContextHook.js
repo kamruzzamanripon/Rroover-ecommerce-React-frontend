@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ApiUrl from "../../api/ApiUrl";
 
 const useCartItemsContextHook = () => {
@@ -10,15 +10,24 @@ const useCartItemsContextHook = () => {
     const [addCartInfo, setAddCartInfo] = useState('');
     const api = new ApiUrl();
 
+    //Call function without Param
     const cartItemsDataFetch = async () => {
         try {
             setLoading(true);
             setErrors();
             setCartItemsData('');
 
+            //localStorage.clear();
             const {data: {data}} = await api.authGetSlug("cart-list");
             setCartItemsData(data)
             setLoading(false);
+            // const myCart = localStorage.getItem("myCart")
+            // if(myCart !== data){
+            //     localStorage.setItem("myCart", JSON.stringify(data));
+            // }
+            localStorage.setItem("myCart", JSON.stringify(data));
+
+
             //console.log("cartItemsDataFetch Context", cartItemsData);
             //console.log("cartItemsData Context", cartItemsData);
 
@@ -28,6 +37,7 @@ const useCartItemsContextHook = () => {
         }
     };
 
+    //call function with param is- Product Id
     const cartItemDeleteFetch = async (productId) => {
         try {
             setLoading(true);
@@ -47,6 +57,7 @@ const useCartItemsContextHook = () => {
         }
     };
 
+    //call Function with param is- Product Id and Product quantity
     const cartItemQuentiyUpdate = async (productId, numberCount)=>{
         try {
             setLoading(true);
@@ -69,6 +80,7 @@ const useCartItemsContextHook = () => {
         }
     }
 
+    //call function with param is product Id, user Id and product Price
     const addToCart = async (productId, userId, price)=>{
         try {
             setLoading(true);
@@ -83,6 +95,7 @@ const useCartItemsContextHook = () => {
             const {data: {data}} = await api.authPostSlug("add-cart", formData);
             setAddCartInfo(data)
             setLoading(false);
+
             //console.log("cartItemsDataFetch Context", cartItemsData);
 
 
@@ -92,13 +105,23 @@ const useCartItemsContextHook = () => {
         }
     }
 
+    //call Fucntion without Param
+    const LocalStoreCart = ()=>{
+         const LocalStoreCartDAta  = JSON.parse(localStorage.getItem("myCart"));
+        return LocalStoreCartDAta
+    }
 
+    useEffect(()=>{
+        LocalStoreCart();
+        //setLoading(true)
+    },[])
 
     return {
         cartItemsDataFetch,
         cartItemDeleteFetch,
         cartItemQuentiyUpdate,
         addToCart,
+        LocalStoreCart,
         cartItemsData,
         loading,
         errors

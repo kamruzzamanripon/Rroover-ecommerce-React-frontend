@@ -6,13 +6,14 @@ import useWishProductDeleteHook from "../../context/wishListPage/WishProductDele
 
 const AddToCartAction = ({productId, setDataFetch, price}) => {
 
-    const {addToCart} = useCartItemsContextHook();
+    const {addToCart, cartItemsDataFetch} = useCartItemsContextHook();
     const {wishProductDelete} = useWishProductDeleteHook()
 
     const addToCartEvent =()=>{
         addToCart(productId, userAuthId, price);
         wishProductDelete(productId);
         setDataFetch(true)
+        cartItemsDataFetch()
     }
 
     //console.log("wishList Add to Cart", userAuthId)

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import useCartItemsContextHook from "../../context/CartPage/CartItemsContextHook";
 import TrComponent from "./TrComponent";
 
+
 const CartItems = () => {
     const [dataFetch, setDataFetch] = useState(false)
     const {cartItemsDataFetch, cartItemsData, loading, errors, cartItemDeleteFetch} = useCartItemsContextHook();
@@ -13,7 +14,7 @@ const CartItems = () => {
     },[dataFetch]);
 
 
-    console.log("cart x Page", dataFetch);
+    //console.log("cart x Page", dataFetch);
     return (
         <form>
             {/* Products-List-Wrapper */}
