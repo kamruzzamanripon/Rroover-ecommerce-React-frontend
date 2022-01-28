@@ -2,13 +2,14 @@ import React, {Fragment, useState} from 'react'
 import {Link} from 'react-router-dom'
 import useLoginContexHook from '../../context/loginRegisterPage/LoginContexHook'
 
+
 function Login() {
     const [userdata, setUserdata] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
 
-    const {loading, errors, loginData} = useLoginContexHook(userdata);
+    const {errors} = useLoginContexHook(userdata);
     //console.log("Login Page", userdata)
     const submitForm = (e) => {
         e.preventDefault();
@@ -16,12 +17,10 @@ function Login() {
         if (email === '' && password === "") {
             setMessage('Please full up Mail Or Password')
         }
-
         setUserdata({
             email,
             password
         });
-
         setEmail('');
         setPassword('');
     }

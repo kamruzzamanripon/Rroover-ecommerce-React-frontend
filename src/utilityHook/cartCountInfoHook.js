@@ -10,10 +10,10 @@ export const cartTotal = (cartItemsData)=>{
 }
 
 export const ProductCount = (cartItemsData)=>{
-    return cartItemsData && cartItemsData.length > 0 ?
+    return cartItemsData && cartItemsData?.length > 0 ?
 
-        cartItemsData.reduce((total, product) => {
-            return total + product.quantity.length;
+        cartItemsData?.reduce((total, product) => {
+            return total + product?.quantity?.length;
         }, 0)
 
         : 0

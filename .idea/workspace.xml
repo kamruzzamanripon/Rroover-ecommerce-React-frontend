@@ -3,12 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WishList/AddToCartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishList/AddToCartAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WishList/TdAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishList/TdAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cartComponent/BillingInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartComponent/BillingInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cartComponent/CartItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartComponent/CartItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/cartComponent/TrComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cartComponent/TrComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/MidHeader/MiniCartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/MidHeader/MiniCartAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/MidHeader/MiniCartTrigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/MidHeader/MiniCartTrigger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/MiniCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/MiniCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/CartPage/CartItemsContextHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/CartPage/CartItemsContextHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginRegisterComponents/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginRegisterComponents/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/CartPage/CartItemsContextHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/loginRegisterPage/LoginContexHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/loginRegisterPage/LoginContexHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilityHook/cartCountInfoHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilityHook/cartCountInfoHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilityHook/myCartUrlEventHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilityHook/myCartUrlEventHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilityHook/userAuthHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilityHook/userAuthHook.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +114,9 @@
       <workItem from="1642930594853" duration="23867000" />
       <workItem from="1643041299552" duration="20169000" />
       <workItem from="1643120397546" duration="22631000" />
-      <workItem from="1643187911352" duration="6783000" />
+      <workItem from="1643187911352" duration="8827000" />
+      <workItem from="1643271718573" duration="31635000" />
+      <workItem from="1643359809006" duration="13836000" />
     </task>
     <servers />
   </component>
@@ -141,10 +152,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="771" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643062266762" />
-    <state x="629" y="154" width="662" height="732" key="find.popup" timestamp="1642536800207">
+    <state x="629" y="154" width="662" height="732" key="find.popup" timestamp="1643379696104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="629" y="154" width="662" height="732" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1642536800207" />
+    <state x="629" y="154" width="662" height="732" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643379696104" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1641499259895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

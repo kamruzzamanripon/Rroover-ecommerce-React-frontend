@@ -1,44 +1,39 @@
 import React, {useState, useEffect} from 'react';
-import useCartItemsContextHook from "../../context/CartPage/CartItemsContextHook";
-import useUpdateComponentHook from "../../utilityHook/updateComponentHook";
+import {CartState} from "../../context/cart/CartContext";
 
-const TrComponent = ({cartItem, setDataFetch}) => {
+
+const TrComponent = ({cartItem}) => {
     const [numberCount, setNumberCount] = useState(cartItem?.quantity);
     const [productId, setProductId] = useState(cartItem?.product?.id);
     const [productInfo, setProductInfo] = useState({});
-    const productImage = cartItem ? JSON.parse(cartItem.product.image) : '';
-    const [updateFetch, setUpdateFetch] = useState(false)
+    const productImage = cartItem ? JSON.parse(cartItem?.product?.image) : '';
 
-    const {cartItemDeleteFetch, cartItemQuentiyUpdate} = useCartItemsContextHook()
+
+
+    const {cartItemDeleteFetch} = CartState();
+    const {cartItemQuentiyUpdate} = CartState();
+    const {state: {loading}} = CartState();
 
     const deleteCartItem = (e) => {
         e.preventDefault();
-        cartItemDeleteFetch(productId);
-        setDataFetch(true);
+        cartItemDeleteFetch(productId, cartItem)
     };
 
     const increaseProductQuantity = (e) => {
         e.preventDefault();
         setNumberCount(numberCount <= 100 ? Number(numberCount) + Number(1) : 1);
-        setUpdateFetch(true);
-        setDataFetch(true);
-
+        cartItemQuentiyUpdate(productId, numberCount)
     };
 
     const decreaseProductQuantity = (e) => {
         e.preventDefault();
         setNumberCount(numberCount > 0 ? Number(numberCount) - Number(1) : 1);
-        setUpdateFetch(true);
-        setDataFetch(true);
-
+        cartItemQuentiyUpdate(productId, numberCount)
     };
 
     useEffect(() => {
-        if (updateFetch) {
-            cartItemQuentiyUpdate(productId, numberCount)
-        }
-        setUpdateFetch(false)
-
+        //cartItemQuentiyUpdate(productId, numberCount)
+        setNumberCount(numberCount);
     }, [numberCount]);
 
     return (
@@ -56,10 +51,11 @@ const TrComponent = ({cartItem, setDataFetch}) => {
                     ${cartItem.actual_price}
                 </div>
             </td>
+
             <td>
                 <div className="cart-quantity">
                     <div className="quantity">
-                        <input type="text" className="quantity-text-field" value={numberCount}/>
+                        <input type="text" className="quantity-text-field" value={cartItem.quantity}/>
                         {/*<a className="plus-a" onClick={(() => setNumberCount(numberCount <= 100 ? Number(numberCount) + Number(1) : 1 ))} >+</a>*/}
                         <a className="plus-a" onClick={(e) => increaseProductQuantity(e)}>+</a>
 
@@ -67,12 +63,18 @@ const TrComponent = ({cartItem, setDataFetch}) => {
                     </div>
                 </div>
             </td>
+
             <td>
                 <div className="action-wrapper float-right">
                     <span>{numberCount * cartItem.actual_price}</span> &nbsp;
-                    <button className="button button-outline-secondary fas fa-trash"
-                            onClick={(e) => deleteCartItem(e)}/>
+
+                    {!loading ?
+                        <button className="button button-outline-secondary fas fa-trash"
+                                onClick={(e) => deleteCartItem(e)}/>
+                        : 'Please Wait'}
+
                 </div>
+
             </td>
         </tr>
     );

@@ -2,6 +2,7 @@ import {HashRouter} from "react-router-dom";
 import AppRoute from "./route/AppRoute";
 import {transitions, positions, Provider as AlertProvider} from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
+import CartContext from "./context/cart/CartContext";
 
 
 function App() {
@@ -21,9 +22,11 @@ function App() {
         <>
 
             <HashRouter>
-                <AlertProvider template={AlertTemplate} {...options}>
-                    <AppRoute/>
-                </AlertProvider>
+                <CartContext>
+                    <AlertProvider template={AlertTemplate} {...options}>
+                        <AppRoute/>
+                    </AlertProvider>
+                </CartContext>
             </HashRouter>
 
         </>

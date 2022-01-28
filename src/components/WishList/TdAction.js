@@ -6,7 +6,7 @@ const TdAction = ({productId, setDataFetch, price}) => {
     return (
         <td>
             <div className="action-wrapper">
-                <AddToCartAction productId={productId} setDataFetch={setDataFetch} price={price}/>
+                <AddToCartAction productId={productId}  price={price} setDataFetch={setDataFetch}/>
                 <DeleteAction productId={productId} setDataFetch={setDataFetch}/>
             </div>
         </td>

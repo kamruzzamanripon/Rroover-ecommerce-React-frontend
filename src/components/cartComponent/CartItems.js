@@ -1,20 +1,16 @@
 import React, {useEffect,useState} from 'react';
 import {Link} from 'react-router-dom';
-import useCartItemsContextHook from "../../context/CartPage/CartItemsContextHook";
 import TrComponent from "./TrComponent";
+import {CartState} from "../../context/cart/CartContext";
 
 
 const CartItems = () => {
-    const [dataFetch, setDataFetch] = useState(false)
-    const {cartItemsDataFetch, cartItemsData, loading, errors, cartItemDeleteFetch} = useCartItemsContextHook();
 
-    useEffect(()=>{
-        cartItemsDataFetch()
-        setDataFetch(false)
-    },[dataFetch]);
+    const {state: { cart }} = CartState();
+    const {state: { loading }} = CartState() ? CartState() : "";
 
+    //console.log("cart x Page", );
 
-    //console.log("cart x Page", dataFetch);
     return (
         <form>
             {/* Products-List-Wrapper */}
@@ -30,9 +26,9 @@ const CartItems = () => {
                     </thead>
                     <tbody>
 
-                    {!loading && cartItemsData ?
-                        cartItemsData.length > 0 ? cartItemsData.map((cartItem, index)=>{
-                                return <TrComponent cartItem={cartItem} key={index} setDataFetch={setDataFetch}/>
+                    {!loading && cart ?
+                        cart.length > 0 ? cart.map((cartItem, index)=>{
+                                return <TrComponent cartItem={cartItem} key={index} />
                             }) : "Your Cart is Empty"
                         : "Data Loading..."}
 
