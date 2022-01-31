@@ -3,19 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/ApiUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/ApiUrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CheckOut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckOut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WishList/AddToCartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WishList/AddToCartAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/MiniCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/MiniCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/headerComponents/UserHandyNavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/headerComponents/UserHandyNavMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/ProductDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/ProductDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/productDetails/AddToCartForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/productDetails/AddToCartForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/productDetails/ProductVariantsInformation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/singleProductComponents/productDetailComponents/productDetails/ProductVariantsInformation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/cart/CartContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/cart/CartContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CheckOutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CheckOutPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BlogSingle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Directory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Faq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TermsAndConditions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TrackOrder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BlogPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BlogSinglePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DirectoryPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FaqPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TermsAndConditionsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/TrackOrderPage.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/route/AppRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/AppRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilityHook/userAuthHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilityHook/userAuthHook.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +123,7 @@
       <workItem from="1643465443822" duration="10057000" />
       <workItem from="1643533003307" duration="9338000" />
       <workItem from="1643556856146" duration="21548000" />
-      <workItem from="1643625102119" duration="5259000" />
+      <workItem from="1643625102119" duration="7140000" />
     </task>
     <servers />
   </component>
