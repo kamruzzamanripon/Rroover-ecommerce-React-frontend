@@ -42,10 +42,11 @@ function AppRoute() {
                 <Route path="/authentication/*" element={<PrivateOutlet />}>
                    <Route  path="wishlist" element={<WhishListPage />} />
                    <Route  path="cart" element={<CartPage />} />
+                   <Route  path="checkout" element={<CheckOutPage />} />
                 </Route>
 
 
-                <Route  path="/checkout" element={<CheckOutPage />} />
+                {/*<Route  path="/checkout" element={<CheckOutPage />} />*/}
                 {/*<Route  path="/wishlist" element={<WhishListPage />} />*/}
                 <Route  path="/search-result" element={<SearchResultPage />} />
 

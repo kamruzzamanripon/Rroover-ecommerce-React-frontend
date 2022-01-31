@@ -1,18 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {userAuthId} from '../../utilityHook/userAuthHook'
 import useWishProductDeleteHook from "../../context/wishListPage/WishProductDeleteHook";
 import {CartState} from "../../context/cart/CartContext";
 
 
-
 const AddToCartAction = ({productId, setDataFetch, price}) => {
-    const {addToCart} = CartState();
+    const [productInfo, setProductInfo] = useState({})
 
+    const {addToCartSingleProduct} = CartState();
+
+    useEffect(() => {
+        setProductInfo({
+            productId:productId,
+            userAuthId:userAuthId,
+            productPrice:price,
+            productQuentity:1
+        })
+    }, [])
 
     const {wishProductDelete} = useWishProductDeleteHook()
 
-    const addToCartEvent =()=>{
-        addToCart(productId, userAuthId, price)
+    const addToCartEvent = () => {
+        //addToCart(productId, userAuthId, price)
+        addToCartSingleProduct(productInfo)
         wishProductDelete(productId);
         setDataFetch(true)
 

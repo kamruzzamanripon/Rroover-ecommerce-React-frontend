@@ -25,12 +25,16 @@ function MiniCart({miniCartTiggerToggle, miniCartTigger, cartItemsData}) {
 
                         {cartItemsData ?
                             cartItemsData.length > 0 ? cartItemsData.map((cartItem, index) => {
-                                const productImage = cartItem ? JSON.parse(cartItem?.product?.image) : '';
+
+                                const productImageArray = cartItem.product ? cartItem.product.image : [];
+                                const productImageParse = productImageArray.length > 0 ? JSON.parse(productImageArray) : [];
+                                const productImage = productImageParse ? productImageParse[0] : [];
 
                                 return (
                                     <li className="clearfix" key={index}>
                                         <a>
-                                            <img src={productImage && productImage[0]} alt="Product"/>
+                                            <img src={productImage} alt="Product"/>
+
                                             <span className="mini-item-name">{cartItem?.product?.name}</span>
                                             <span className="mini-item-price">${cartItem.actual_price}</span>
                                             <span className="mini-item-quantity"> x {cartItem?.quantity} </span>

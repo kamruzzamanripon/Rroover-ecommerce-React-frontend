@@ -22,11 +22,11 @@ function App() {
         <>
 
             <HashRouter>
-                <CartContext>
-                    <AlertProvider template={AlertTemplate} {...options}>
+                <AlertProvider template={AlertTemplate} {...options}>
+                    <CartContext>
                         <AppRoute/>
-                    </AlertProvider>
-                </CartContext>
+                    </CartContext>
+                </AlertProvider>
             </HashRouter>
 
         </>

@@ -64,6 +64,13 @@ class ApiUrl {
         return res;
     }
 
+    authGetSlugOneParam = async (slug, paramOne)=>{
+        const token = Cookie?.get('passport_frontend');
+        const res = await  axios.get(`${process.env.REACT_APP_DATABASE_URL}`  + "/" + slug+ "/" + paramOne, { headers: {"Authorization" : `Bearer ${token}`} });
+        //console.log("Api errors data", res.data )
+        return res;
+    }
+
     authPostSlug = async (slug, data)=>{
         const token = Cookie?.get('passport_frontend');
         const res = await  axios.post(`${process.env.REACT_APP_DATABASE_URL}`  + "/" + slug, data,{ headers: {"Authorization" : `Bearer ${token}`} });

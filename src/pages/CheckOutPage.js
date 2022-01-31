@@ -10,7 +10,7 @@ function CheckOutPage() {
     })
     return (
         <Fragment>
-            
+
             {/* Header */}
             <Header allCategoryMenu='false'/>
             {/* Header /- */}
@@ -24,7 +24,7 @@ function CheckOutPage() {
             {/* Page Introduction Wrapper /- */}
 
            <CheckOut/>
-            
+
 
             {/* Footer */}
             <Footer/>
