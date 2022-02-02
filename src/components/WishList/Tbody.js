@@ -1,21 +1,22 @@
 import React from 'react';
+import TdAction from "./TdAction";
 import TdProductInfo from "./TdProductInfo";
 import TdProductPrice from "./TdProductPrice";
 import TdProductStock from "./TdProductStock";
-import TdAction from "./TdAction";
 
 const Tbody = ({wishListData, loading, setDataFetch}) => {
-
-
+    
     return (
         <tbody>
 
         {!loading && wishListData ? (
             wishListData.map((singleWishlist, index)=>(
+              
                 <tr key={index}>
 
                     <TdProductInfo
-                        src="images/product/product@1x.jpg"
+                        //src="images/product/product@1x.jpg"
+                        src={singleWishlist ? JSON.parse(singleWishlist.image)[0] :"images/product/product@1x.jpg"}
                         name={singleWishlist.name}
                     />
 

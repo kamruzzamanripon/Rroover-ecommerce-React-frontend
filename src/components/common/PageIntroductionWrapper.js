@@ -1,8 +1,8 @@
-import React,{Fragment} from 'react';
-import {useSingleProduct} from '../../context/SingleProductContext'
-import {useCategoryProducts} from '../../context/SingleCategoryProductsContext'
-import {useSubCategoryProduct} from '../../context/SubCategoryProductsContext'
-import {useSingleBrandProducts} from '../../context/SingleBrandProductsContext'
+import React, { Fragment } from 'react';
+import { useSingleBrandProducts } from '../../context/SingleBrandProductsContext';
+import { useCategoryProducts } from '../../context/SingleCategoryProductsContext';
+import { useSingleProduct } from '../../context/SingleProductContext';
+import { useSubCategoryProduct } from '../../context/SubCategoryProductsContext';
 
 function PageIntroductionWrapper() {
     //Single Products
@@ -29,13 +29,15 @@ function PageIntroductionWrapper() {
     const brandBackgroundImage = brandProducts ? brandProducts[0]?.brand?.image : "";
     const brandName = brandProducts ? brandProducts[0]?.brand?.name : "";
 
+    //Default Image
+    const defaultImage = "https://images.unsplash.com/photo-1563174761-62892315819b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     //console.log("brandBackgroundImage", brandBackgroundImage)
 
     return (
         <Fragment>
             <div
                 className="page-style-a"
-                style={{ backgroundImage: `url(${singleProductBackgroundImage  ||  categoryBackgroundImage || subCategoryBackgroundImage || brandBackgroundImage })` }}
+                style={{ backgroundImage: `url(${singleProductBackgroundImage  ||  categoryBackgroundImage || subCategoryBackgroundImage || brandBackgroundImage || defaultImage })` }}
             >
             <div className="container">
                 <div className="page-intro">

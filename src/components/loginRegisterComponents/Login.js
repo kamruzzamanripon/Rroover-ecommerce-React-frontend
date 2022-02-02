@@ -1,6 +1,6 @@
-import React, {Fragment, useState} from 'react'
-import {Link} from 'react-router-dom'
-import useLoginContexHook from '../../context/loginRegisterPage/LoginContexHook'
+import React, { Fragment, useState } from 'react';
+import { Link } from 'react-router-dom';
+import useLoginContexHook from '../../context/loginRegisterPage/LoginContexHook';
 
 
 function Login() {
@@ -53,7 +53,7 @@ function Login() {
                                 <span className="astk">*</span>
                             </label>
                             <input
-                                type="text"
+                                type="password"
                                 id="login-password"
                                 className="text-field"
                                 placeholder="Password"

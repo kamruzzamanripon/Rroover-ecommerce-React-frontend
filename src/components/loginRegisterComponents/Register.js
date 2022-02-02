@@ -1,6 +1,6 @@
-import React, {Fragment, useState, useEffect} from 'react';
-import useRegisterContextHook from '../../context/loginRegisterPage/RegisterContextHook'
-import { useAlert } from 'react-alert'
+import React, { Fragment, useEffect, useState } from 'react';
+import { useAlert } from 'react-alert';
+import useRegisterContextHook from '../../context/loginRegisterPage/RegisterContextHook';
 
 function Register() {
     const [userdata, setUserdata] = useState('');
@@ -92,7 +92,7 @@ function Register() {
                                     <span className="text-danger"> {errors.password}</span>) : ""}
                             </label>
                             <input
-                                type="text"
+                                type="password"
                                 id="password"
                                 className="text-field"
                                 placeholder="Password"
@@ -105,7 +105,7 @@ function Register() {
                                     <span className="text-danger"> {errors.password}</span>) : ""}
                             </label>
                             <input
-                                type="text"
+                                type="password"
                                 id="password"
                                 className="text-field"
                                 placeholder="Password"

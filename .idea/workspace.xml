@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa6c3c9-65e6-4fc6-b772-e354bd928342" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BlogSingle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Directory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Faq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TermsAndConditions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TrackOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BlogPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BlogSinglePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DirectoryPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/FaqPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TermsAndConditionsPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/TrackOrderPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/route/AppRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/AppRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Screenshot_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Screenshot_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Screenshot_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Screenshot_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +33,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/homeComponents" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -123,7 +110,16 @@
       <workItem from="1643465443822" duration="10057000" />
       <workItem from="1643533003307" duration="9338000" />
       <workItem from="1643556856146" duration="21548000" />
-      <workItem from="1643625102119" duration="7140000" />
+      <workItem from="1643625102119" duration="7747000" />
+      <workItem from="1643651738285" duration="20000" />
+      <workItem from="1643708141673" duration="145000" />
+      <workItem from="1643708299989" duration="240000" />
+      <workItem from="1643732413663" duration="645000" />
+      <workItem from="1643733426596" duration="8000" />
+      <workItem from="1643733456917" duration="17000" />
+      <workItem from="1643740435939" duration="91000" />
+      <workItem from="1643788485508" duration="19000" />
+      <workItem from="1643788506061" duration="207000" />
     </task>
     <servers />
   </component>
@@ -135,22 +131,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="182" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643120534422" />
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641324602011">
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643788673340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641324602011" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643788673340" />
     <state x="734" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641317626359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641317626359" />
+    <state x="1153" y="297" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1643788692070">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1153" y="297" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643788692070" />
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1643125470671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643125470671" />
-    <state x="926" y="159" key="SettingsEditor" timestamp="1641480277703">
+    <state x="520" y="116" key="CommitChangelistDialog2" timestamp="1643708364201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="926" y="159" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641480277703" />
+    <state x="520" y="116" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643708364201" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1643740506258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643740506258" />
+    <state x="926" y="159" key="SettingsEditor" timestamp="1643788710358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="926" y="159" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643788710358" />
     <state x="486" y="113" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1641581758448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,10 +171,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="629" y="154" width="662" height="732" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643466133341" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1641499259895">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1643708355945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641499259895" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1643708355945" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1643406209122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

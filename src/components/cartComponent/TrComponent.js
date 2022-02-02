@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {CartState} from "../../context/cart/CartContext";
+import React, { useEffect, useState } from 'react';
+import { CartState } from "../../context/cart/CartContext";
 
 
 const TrComponent = ({cartItem}) => {
