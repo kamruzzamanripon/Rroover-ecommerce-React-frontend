@@ -1,6 +1,5 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import ApiUrl from '../../api/ApiUrl';
-import useBannerLayerContext from '../../context/homepage/sectionFetchContext/BannerLayerContextHook'
+import React, { Fragment } from 'react';
+import useBannerLayerContext from '../../context/homepage/sectionFetchContext/BannerLayerContextHook';
 
 
 
@@ -14,7 +13,7 @@ function BannerLayer() {
                 <div className="image-banner">
                     {!loading ?
                         (<a href="shop-v1-root-category.html" className="mx-auto banner-hover effect-dark-opacity">
-                            <img className="img-fluid" src={singleBanner ? singleBanner.image : ''}
+                            <img className="img-fluid" src={singleBanner ? (process.env.REACT_APP_ImagebaseUrl +singleBanner.image) : 'https://via.placeholder.com/1200'}
                                  alt="Winter Season Banner"/>
                         </a>)
                         :

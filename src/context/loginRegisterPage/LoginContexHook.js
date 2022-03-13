@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React,{useEffect, useState} from 'react';
 import ApiUrl from "../../api/ApiUrl";
 import Cookie from 'js-cookie';

@@ -1,5 +1,4 @@
-import React, {Fragment, useEffect, useState} from 'react';
-import ApiUrl from '../../api/ApiUrl';
+import React, { Fragment } from 'react';
 import useBannerImageViewMoreContext from "../../context/homepage/sectionFetchContext/BannerImageViewMoreContextHook";
 
 
@@ -13,7 +12,7 @@ function BannerImageViewMore() {
                     <div className="container">
                         <div className="image-banner u-s-m-y-40">
                             <a href="shop-v1-root-category.html" className="mx-auto banner-hover effect-dark-opacity">
-                                <img className="img-fluid" src={singleBanner ? singleBanner.image : ''} alt="Banner Image"/>
+                                <img className="img-fluid" src={singleBanner ? process.env.REACT_APP_ImagebaseUrl + singleBanner.image : ''} alt="Banner Image"/>
 
                             </a>
                         </div>

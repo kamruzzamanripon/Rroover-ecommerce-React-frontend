@@ -8,7 +8,7 @@ const TrComponent = ({cartItem}) => {
     const [productInfo, setProductInfo] = useState({});
     const productImage = cartItem ? JSON.parse(cartItem?.product?.image) : '';
 
-
+    //console.log("productImage Single xx", productImage)
 
     const {cartItemDeleteFetch} = CartState();
     const {cartItemQuentiyUpdate} = CartState();
@@ -41,7 +41,7 @@ const TrComponent = ({cartItem}) => {
             <td>
                 <div className="cart-anchor-image">
                     <a href="single-product.html">
-                        <img src={productImage[0]} alt="Product"/>
+                        <img src={process.env.REACT_APP_ImagebaseUrl + productImage[0]} alt="Product"/>
                         <h6>{cartItem?.product?.name}</h6>
                     </a>
                 </div>

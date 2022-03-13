@@ -1,8 +1,8 @@
-import React,{Fragment} from 'react'
-import {Link} from 'react-router-dom';
-import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import React, { Fragment } from 'react';
+import OwlCarousel from 'react-owl-carousel';
+import { Link } from 'react-router-dom';
 
 function OwlSmallFiveSlide({listItems}) {
     const optionsMenProduct = {
@@ -43,7 +43,7 @@ function OwlSmallFiveSlide({listItems}) {
                         return(
                             <div className="brand-pic" key={index}>
                                 <Link to={`/single-brand/${item.id}`}>
-                                    <img src={item.image} alt="Brand Logo 1" />
+                                    <img src={process.env.REACT_APP_ImagebaseUrl + item.image} alt="Brand Logo 1" />
                                 </Link>
                             </div>
                         )

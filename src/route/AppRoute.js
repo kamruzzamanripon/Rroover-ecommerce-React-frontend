@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { Fragment } from 'react';
 import { Route, Routes } from "react-router-dom";
 import CartPage from '../pages/CartPage';

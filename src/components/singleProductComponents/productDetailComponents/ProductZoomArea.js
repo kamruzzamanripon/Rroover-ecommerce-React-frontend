@@ -1,11 +1,11 @@
-import React,{Fragment, useState} from 'react'
+import React, { Fragment, useState } from 'react';
 import ReactImageZoom from 'react-image-zoom';
-import {useSingleProduct} from '../../../context/SingleProductContext';
+import { useSingleProduct } from '../../../context/SingleProductContext';
 
 function ProductZoomArea() {
     const singleProductInfo = useSingleProduct();
     const productImages = singleProductInfo ? JSON.parse(singleProductInfo.image) : ["Image not available"];
-    const [previewImage, setPreviewImage] = useState(productImages[0])
+    const [previewImage, setPreviewImage] = useState( process.env.REACT_APP_ImagebaseUrl + productImages[0])
 
     //console.log(productImages);
 
@@ -30,7 +30,7 @@ function ProductZoomArea() {
                   <div id="gallery" className="u-s-m-t-10">
                       {productImages.map((image, index)=>(
                           <a onClick={bigImageConvert} className="active"  key={index}>
-                              <img src={image} alt="Product" />
+                              <img src={process.env.REACT_APP_ImagebaseUrl + image} alt="Product" />
                           </a>
                       ))}
 

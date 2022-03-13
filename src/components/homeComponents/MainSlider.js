@@ -1,8 +1,8 @@
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import OwlCarousel from "react-owl-carousel";
-import useMainSliderContext from '../../context/homepage/sectionFetchContext/MainSliderContextHook'
+import useMainSliderContext from '../../context/homepage/sectionFetchContext/MainSliderContextHook';
 
 
 function MainSlider() {
@@ -25,12 +25,12 @@ function MainSlider() {
 
   const {bannerData, loading, errors} = useMainSliderContext();
 
-  //console.log(bannerData)
+  //console.log("base url", process.env.REACT_APP_ImagebaseUrl)
 
   const owlData =  bannerData.bData ? (bannerData.bData.map((banner, index)=>{
     return(
         <div className="bg-image" key={index}>
-          <img className="img-fluid" src={banner ? banner.image : ''}
+            <img className="img-fluid" src={banner ? (process.env.REACT_APP_ImagebaseUrl +banner.image) : 'https://via.placeholder.com/1500'}
                alt="Winter Season Banner"/>
           <div className={`slide-content${(index % 2 == 0) ? "-2" : ""} slide-animation`}>
             <h1 className={`${(index % 2 == 0) ? "slide-2-h2-a" : ""}`}>{banner ? banner.title : ''}</h1>

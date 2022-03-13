@@ -1,6 +1,6 @@
-import React, {Fragment, useState} from 'react'
-import {Link} from 'react-router-dom'
-import {cartTotal} from "../../../utilityHook/cartCountInfoHook"
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import { cartTotal } from "../../../utilityHook/cartCountInfoHook";
 import MiniCartAction from "./MidHeader/MiniCartAction";
 
 
@@ -33,7 +33,7 @@ function MiniCart({miniCartTiggerToggle, miniCartTigger, cartItemsData}) {
                                 return (
                                     <li className="clearfix" key={index}>
                                         <a>
-                                            <img src={productImage} alt="Product"/>
+                                            <img src={process.env.REACT_APP_ImagebaseUrl + productImage} alt="Product"/>
 
                                             <span className="mini-item-name">{cartItem?.product?.name}</span>
                                             <span className="mini-item-price">${cartItem.actual_price}</span>
